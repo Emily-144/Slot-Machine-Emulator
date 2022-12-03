@@ -1,0 +1,160 @@
+/*	*	*	*	*	*	*	*	*	*	*	*	*
+ * 	 
+ * 	Slot Machine Emulator CSS
+ *	Written by Emily Gross on 10/22/22
+ * 
+ *	This CSS file adds styling to the elements
+ * 	in SlotMachineEmulator. Certain elements
+ * 	are organized into custom classes/IDs for
+ * 	better efficiency and readability.
+ * 
+ *	*	*	*	*	*	*	*	*	*	*	*	*/
+
+.label {
+	-fx-font-size: 20;
+	-fx-text-fill: #400000;
+}
+
+.headerLbl {
+	-fx-font-size: 25;
+}
+
+.rightAreaLbl {
+	-fx-pref-width: 230;
+	-fx-alignment: center-right;
+}
+
+.button, .radio-button {
+	-fx-background-color: #e5aa7a;
+	-fx-text-fill: #400000;
+	-fx-border-width: 2;
+    -fx-border-color: #400000;
+    -fx-background-insets: 0; /* prevents background color leak */
+}
+
+.button, .text-field, .amountLbl {
+	-fx-background-radius: 12;
+	-fx-border-radius: 12;
+	-fx-pref-width: 75;
+    -fx-font-size: 20;
+    -fx-padding: 10;
+}
+
+.button:hover, .radio-button:hover {
+	-fx-text-fill: #fff9bd;
+}
+
+.amountLbl {
+	-fx-pref-width: 230;
+	-fx-border-width: 2;
+    -fx-border-color: #400000;
+    -fx-border-radius: 12;
+    -fx-background-color: #fff9bd;
+}
+
+.text-field, #betMultiplierLbl {
+	-fx-pref-width: 150;
+}
+
+#betMultiplierLbl {
+	-fx-font-size: 20;
+	-fx-padding: 10;
+}
+
+.GridPane {
+	-fx-pref-width: 230;
+	-fx-alignment: center;
+}
+
+#slotsTitle {
+	-fx-font-size: 80;
+	-fx-padding: -5, 0, -5, 0;
+}
+
+#messageLbl {
+	-fx-text-alignment: center;
+	-fx-font-size: 25;
+	-fx-padding: 5;
+}
+
+#topLbls {
+	-fx-alignment: center;
+	-fx-spacing: -20;
+}
+
+#slots {
+	-fx-spacing: 10;
+}
+
+#spinBtn {
+	-fx-background-radius: 150;
+	-fx-border-radius: 150;
+    -fx-pref-width: 150;
+    -fx-pref-height: 150;
+    -fx-font-size: 40;
+}
+
+#maxBetBtn, #cashOutBtn {
+	-fx-background-radius: 25;
+	-fx-border-radius: 25;
+	-fx-pref-width: 100;
+    -fx-pref-height: 100;
+    -fx-text-alignment: center;
+    -fx-font-size: 25;
+}
+
+#mainButtons {
+	-fx-alignment: center;
+	-fx-spacing: 10;
+}
+
+#leftArea {
+	-fx-alignment: center-left;
+	-fx-spacing: 39.5;
+}
+
+#middleArea {
+	-fx-pref-width: 340;
+    -fx-pref-height: 500;
+	-fx-alignment: top-center;
+	-fx-spacing: 25;
+}
+
+#rightArea {
+	-fx-alignment: center-right;
+	-fx-spacing: 20;
+}
+
+#leftArea, #rightArea {
+	-fx-pref-width: 290;
+    -fx-pref-height: 500;
+}
+
+.payoutHeader {
+	-fx-underline: true;
+}
+
+.payoutAmounts {
+	-fx-font-size: 20;
+	-fx-pref-width: 108;
+	-fx-alignment: center-right;
+}
+
+.radio-button {
+	-fx-pref-width: 110;
+	-fx-pref-height: 25;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 8;
+    -fx-font-size: 20;
+    -fx-alignment: center;
+}
+
+.radio-button .dot {
+    -fx-padding: 4;
+    -fx-background-insets: 0; /* keeps dot in center */
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #400000;
+}
